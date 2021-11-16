@@ -40,7 +40,7 @@ for (iteratie = 0; iteratie < iteraties; iteratie++) {   // Niet veranderen!
 
 nr = nr + 1;         // nummer eentje ophogen, eigenlijk zinloos in dit voorbeeld
 
-tabel   = [nr, t, s];// Vul hier één of meer grootheden in die je in een tabel wilt zien.
+tabel   = [nr, t, s];// Vul hier Ã©Ã©n of meer grootheden in die je in een tabel wilt zien.
 grafiek = [t, s, "rood"];    // Vul hier precies twee grootheden in waarvan je de grafiek wilt hebben.
 
 ds = v * dt;         // Elk intervalletje dt wordt er een afstand ds afgelegd, en natuurlijk geldt v = ds/dt !
@@ -52,12 +52,12 @@ t = t + dt;          // Waarom is deze regel??? De regel is zinvol, maar waarom?
 //*****************************************
 
 // UITDAGING:
-// Lees in de ontstane grafiek de (horizontale en verticale) coördinaten af van zowel beginpunt als eindpunt.
+// Lees in de ontstane grafiek de (horizontale en verticale) coï¿½rdinaten af van zowel beginpunt als eindpunt.
 // Kun je begrijpen waarom de grafiek start en stopt waar die dat doet?
 // Zorg dat je dit goed door hebt!
 // - Laat de beweging zoals die is (dus niets aan het model zelf veranderen). Probeer om in de grafiekinstellingen de grafiek precies
 //   passend te krijgen bij deze beweging.
-// - Nu andersom: Probeer of je met de oorspronkelijke grafiekinstellingen (even opnieuw downloaden) de beweging zó te veranderen
+// - Nu andersom: Probeer of je met de oorspronkelijke grafiekinstellingen (even opnieuw downloaden) de beweging zï¿½ te veranderen
 //   dat de rode lijn die de beweging voorstelt, precies passend wordt in het grafiekgebied.
 
 tabelfunctie(tabel);
@@ -86,93 +86,6 @@ lijntjesy = 10;			// Onderverdeling y-as (aantal rasterlijntjes)
 //*                                                *
 //*                                                *
 //**************************************************			
-
-
-
-
-/* HOE WERKT HET?
-
-Je kunt dit model zelf veranderen, maar voordat je dit kunt moet je het eerst
-als bestand op je eigen computer hebben staan. Als je het nog niet hebt gedownload:
-Klik met rechtermuis en kies voor "Opslaan". Het model wordt opgeslagen als een 
-bestand met een naam die eindigt op ".htm".Let goed op in welke map je het bestand opslaat. 
- 
-Hierna kun je het met kladblok, notepad, wordpad of een andere teksteditor wijzigen. 
-Let op: gebruik geen WORD.
-
-Om het model te laten rekenen en om te kijken wat het resultaat is moet je dit bestand opslaan
-en openen met je Browser. Als je ervoor zorgt dat de naam eindigt op ".html" of ".htm" opent 
-je browser vanzelf als je op het bestand klikt. Een andere manier om het met je browser te openen 
-is vanuit de browser zelf: Als je bovening filenaam met locatie van dit bestand typt 
-opent de browser vanzelf.
-
-Doet hij het niet meer nadat je iets gewijzigd hebt? De meest voorkomende fouten op een rijtje:
-
- * Je hebt ergens een komma gebruikt in plaats van een punt voor een decimaal getal.
- * Je bent ergens ; vergeten achter te zetten (moet altijd in javascript)
- * De maximale of minimale waarden op de x-as en y-as kloppen niet meer.
- * Je bent een startwaarden vergeten op te geven voor een nieuwe variabele.
- * Je hebt een spelfout gemaakt in de naam van een variabele.
- * Je bent ergens een haakje vergeten of hebt een haakje teveel staan.
- * Je hebt er geen rekening mee gehouden dat hoeken bij sin, cos, tan in radialen moeten.
- * De naam waaronder je het opgeslagen hebt eindigt niet op ".htm".
-
-OVER PROGRAMMEREN IN JAVASCRIPT
-Dit model is een klein programmaatje in een taal die "javascript" heet. Javascript is een taal die
-veel gebruikt wordt in webpagina's. Vrijwel elke website die je bezoekt bevat wel een klein 
-stukje javascript. Elke browser kan een programmaatje in javascript lezen en uitvoeren. 
-Je hoeft hiervoor niks te installeren. Met (vrijwel) elke browser kun je Javascript uitvoeren.
-Je hoeft niet te kunnen programmeren om met dit model te kunnen werken maar een paar dingetjes 
-zijn wel handig om te weten:
-
-EINDE REGEL
-Elke programmeerregel moet in Javascript eindigen op een puntkomma (;)
-
-WISKUNDIGE FUNCTIES
-Optellen, aftrekken vermenigvuldigen en delen gaan in javascript op dezelfde manier als normaal
-maar...
-
-* Getallen moeten met een decimale punt in plaats van een komma. Geen 3,4 maar 3.4 dus.
-* Machtsverheffen: In Javascript schrijft je "Math.pow(x,y)" voor x tot de macht y. 
-* Wortel: In javascript schrijft je "Math.sqrt(x)" voor de wortel van x.
-* Sin,cos,tan: In Javascript schrijft je "Math.sin(x)" voor de sinus van x.
-* Het getal pi is in Javascript "Math.PI".
-* Wetenschappelijke notatie: "3,2 maal 10 tot de 6de" schrijf je in Javascript als 3.2e6 
-
-COMMENTAAR
-In het programma hierboven kom je af en toe '//' tegen. In javascript betekent dit een 'comment'. 
-Alles wat in de regel hierachter staat, wordt door de browser genegeerd en heeft dus voor het programma
-geen enkele betekenis. Je kunt commentaar gebruiken om het model voor jezelf duidelijker te maken.
-
-WHILE
-In het programma hierboven zie je bij het begin van de modelregels staan "while (xxxx)". 
-Dit betekent dat het stukje programma wat daarna komt en tussen accolades staat "{....}" steeds herhaald wordt. 
-Precies wat je wilt in een model. Door het stukje tussen haakjes (xxxx) kun je aangeven hoe lang het model
-moet doorrekenen. Als je bijvoorbeeld schrijft 'while (t<25)' gaat het model net zo lang door totdat de tijd (t)
-niet meer kleiner dan 25 is.Het model stopt dan dus bij t=25. Door dit te veranderen kun je het model dus 
-langer of korter laten doorrekenen.
-
-TEKEN VOOR :=
-Bij modelregels in opgaven wordt meestal ":=" gebruikt in plaats van "=" om aan te geven dat een variabel
-een bepaalde waarde moet krijgen. In Javascript is dit niet zo. Je gebruikt hier het gewone "="-teken.
-
-MEER WETEN OVER JAVASCRIPT
-Voor het werken met dit model hoef je niet echt te kunnen programmeren in javascript. 
-Maar misschien vind je het wel leuk om het toch te kunnen. Het is namelijk een hele 
-makkelijke manier om te leren programmeren omdat je er geen speciale software voor nodig hebt:
-Elke browser kan een programmaatje in javascript uitvoeren. Op internet kun je allerlei 
-(gratis) online cursussen javascript vinden als je meer wil weten... 
-*/
-
-
-
-
-
-
-
-
-
-
 
 
 
